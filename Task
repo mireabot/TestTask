@@ -1,0 +1,8 @@
+func rotate(_ nums: inout [Int], _ k: Int) {
+        var index = 0
+        while index < k {
+            let last = nums.removeLast()
+            nums.insert(last, at: 0)
+            index += 1
+        }
+    }
